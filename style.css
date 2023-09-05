@@ -10,10 +10,11 @@ html {
   box-sizing: inherit;
   margin: 0;
   padding: 0;
-  overflow: hidden;
   font-family: "Rubik", sans-serif;
 }
-
+ul {
+  list-style-type: none; /* Removes the bullet point */
+}
 body {
   margin-left: 150px;
   background: linear-gradient(40deg, #11013d, #2d4489);
@@ -97,4 +98,32 @@ section li {
 
 section li span {
   color: #ffe62d;
+}
+
+@media (max-width: 768px) {
+  body {
+    margin: 100px 16px;
+    justify-content: flex-start;
+  }
+  body h1 {
+    font-size: 30px;
+  }
+  body h1 span {
+    font-size: 40px;
+  }
+
+  #age-input {
+    padding: 30px 20px;
+    margin: 20px 0;
+    width: 100%;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(240, 255, 255, 0.356);
+  }
+
+  section li {
+    font-size: 18px;
+    padding: 5px;
+  }
 }
