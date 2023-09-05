@@ -21,6 +21,18 @@ function updateAge() {
 function calculateAge() {
   let birthDate = new Date(userInput.value);
 
+  if (isNaN(birthDate)) {
+    console.error("");
+    ageResult.innerHTML = `Enter your <span>birthday</span> above`;
+    ageResultSeconds.innerHTML = ``;
+    ageResultMinutes.innerHTML = ``;
+    ageResultHours.innerHTML = ``;
+    ageResultDays.innerHTML = ``;
+    ageResultMonths.innerHTML = ``;
+    ageResultYears.innerHTML = ``;
+    return;
+  }
+
   let birthYear = birthDate.getFullYear();
   let birthMonth = birthDate.getMonth() + 1;
   let birthDay = birthDate.getDate();
