@@ -90,10 +90,11 @@ body h1 span {
   scale: 1.2;
 }
 
-#result {
+section li {
   font-size: 20px;
+  padding: 5px;
 }
 
-#result span {
+section li span {
   color: #ffe62d;
 }
