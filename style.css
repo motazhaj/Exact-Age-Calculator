@@ -12,7 +12,6 @@ html {
   padding: 0;
   overflow: hidden;
   font-family: "Rubik", sans-serif;
-
 }
 
 body {
@@ -25,13 +24,13 @@ body {
   justify-content: center;
 }
 
-body h1{
-    font-size: 40px;
+body h1 {
+  font-size: 40px;
 }
 
-body h1 span{
-    font-size: 50px;
-    color: #ffe62d;
+body h1 span {
+  font-size: 50px;
+  color: #ffe62d;
 }
 
 #age-input {
@@ -61,20 +60,20 @@ body h1 span{
   font-size: 18px;
 }
 
-#age-input input::-webkit-calendar-picker-indicator{
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: auto;
-    height: auto;
-    position: absolute;
-    background-position: calc(100%-10px);
-    background-size: 30px;
-    cursor: pointer;
+#age-input input::-webkit-calendar-picker-indicator {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: auto;
+  height: auto;
+  position: absolute;
+  background-position: calc(100%-10px);
+  background-size: 30px;
+  cursor: pointer;
 }
 
-#age-input button{
+#age-input button {
   height: 30px;
   width: 30%;
   border-width: 0px;
@@ -83,11 +82,18 @@ body h1 span{
   color: black;
   background-color: #ffe62d;
   font-size: 18px;
-
 }
 
-#age-input button:hover{
-    color: white;
-    background-color: #34016a;
-    scale: 1.2;
+#age-input button:hover {
+  color: white;
+  background-color: #34016a;
+  scale: 1.2;
+}
+
+#result {
+  font-size: 20px;
+}
+
+#result span {
+  color: #ffe62d;
 }
