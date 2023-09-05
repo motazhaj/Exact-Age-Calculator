@@ -1,0 +1,93 @@
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+*,
+*::before,
+*::after {
+  color: white;
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: "Rubik", sans-serif;
+
+}
+
+body {
+  margin-left: 150px;
+  background: linear-gradient(40deg, #11013d, #2d4489);
+  display: flex;
+  flex-direction: column;
+  font-family: "Rubik", sans-serif;
+  height: inherit;
+  justify-content: center;
+}
+
+body h1{
+    font-size: 40px;
+}
+
+body h1 span{
+    font-size: 50px;
+    color: #ffe62d;
+}
+
+#age-input {
+  padding: 30px;
+  margin: 40px 0;
+  width: 500px;
+  border-radius: 20px;
+  border-width: 1px;
+  border-color: white;
+  box-shadow: 4px 4px 4px #00000038;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(240, 255, 255, 0.356);
+}
+
+#age-input input {
+  text-align: center;
+  background-color: #13032d;
+  display: block;
+  width: 100%;
+  margin-right: 10px;
+  height: 30px;
+  border-width: 0px;
+  outline: 0;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+#age-input input::-webkit-calendar-picker-indicator{
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: auto;
+    height: auto;
+    position: absolute;
+    background-position: calc(100%-10px);
+    background-size: 30px;
+    cursor: pointer;
+}
+
+#age-input button{
+  height: 30px;
+  width: 30%;
+  border-width: 0px;
+  border-radius: 5px;
+  padding: 0 10px;
+  color: black;
+  background-color: #ffe62d;
+  font-size: 18px;
+
+}
+
+#age-input button:hover{
+    color: white;
+    background-color: #34016a;
+    scale: 1.2;
+}
