@@ -12,17 +12,18 @@ let ageResultYears = document.getElementById("result-years");
 
 calculateAgeButton.addEventListener("click", updateAge);
 
-function updateAge() {
-  calculateAge();
+let intervalId;
 
-  setInterval(calculateAge, 1000);
+function updateAge() {
+  clearInterval(intervalId);
+  calculateAge();
+  intervalId = setInterval(calculateAge, 1000);
 }
 
 function calculateAge() {
   let birthDate = new Date(userInput.value);
 
   if (isNaN(birthDate)) {
-    console.error("");
     ageResult.innerHTML = `Enter your <span>birthday</span> above`;
     ageResultSeconds.innerHTML = ``;
     ageResultMinutes.innerHTML = ``;
